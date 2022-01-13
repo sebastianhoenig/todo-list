@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap"
+      rel="stylesheet"
+    />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="title">Todo List</div>
+    <div id="content">
+      <nav>
+        <div class="header">
+          <h3><i class="fas fa-list"></i> Projects</h3>
+        </div>
+        <div id="projects"></div>
+        <div id="add-project">
+          <button class="new-project-button">
+            <i class="fas fa-plus"></i> New Project
+          </button>
+          <input
+            type="text"
+            id="add-project-input-id"
+            class="add-project-input deactivated"
+          />
+          <div class="project-button-container">
+            <button class="add-project-input-button deactivated">Add</button>
+            <button class="cancel-project-input-button deactivated">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div id="todos">
+        <div id="container"></div>
+        <div id="add-div"></div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
