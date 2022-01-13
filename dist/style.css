@@ -1,0 +1,313 @@
+/* Whole content */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  font-size: 4rem;
+  font-family: "Gloria Hallelujah";
+  color: aliceblue;
+  background-color: rgba(68, 65, 65, 0.719);
+}
+
+#content {
+  margin: 0;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+}
+
+/* project navbar */
+
+nav {
+  margin: 0;
+  width: 15%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: rgba(146, 155, 152, 0.24);
+  font-size: x-large;
+  padding: 10px;
+}
+
+.project-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.project-nav:hover {
+  background-color: rgba(146, 155, 152, 0.4);
+}
+
+.active {
+  background-color: rgba(146, 155, 152, 0.4);
+}
+
+.project-text {
+  display: flex;
+}
+
+.project-nav .project-del {
+  visibility: hidden;
+  display: flex;
+}
+
+.project-nav:hover .project-del {
+  visibility: visible;
+}
+
+.project-del button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.add-project-input {
+  margin-top: 10px;
+  font-size: x-large;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.project-button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-project-input-button {
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  color: rgb(34, 32, 32);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  cursor: pointer;
+  background-color: rgba(8, 235, 8, 0.808);
+  font-size: x-large;
+  width: 49%;
+}
+
+.add-project-input-button:hover {
+  background-color: rgb(79, 173, 16);
+}
+
+.cancel-project-input-button {
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  color: rgb(34, 32, 32);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  cursor: pointer;
+  background-color: rgba(255, 8, 0, 0.671);
+  font-size: x-large;
+  width: 49%;
+}
+
+.cancel-project-input-button:hover {
+  background-color: rgba(194, 18, 12, 0.671);
+}
+
+.deactivated {
+  display: none;
+}
+
+.new-project-button {
+  margin-top: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: x-large;
+  text-align: left;
+  width: 100%;
+}
+
+.new-project-button:hover {
+  background-color: rgba(146, 155, 152, 0.4);
+}
+
+/* container with ToDo's */
+
+#todos {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#container {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#add-div {
+  margin-top: 20px;
+  width: 60%;
+}
+
+.add-todo {
+  margin-top: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: x-large;
+  text-align: left;
+  width: 100%;
+}
+
+.add-todo:hover {
+  background-color: rgba(126, 115, 115, 0.288);
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-top: 20px;
+}
+
+.hover:hover {
+  background-color: rgba(155, 141, 141, 0.747);
+}
+
+.todo-input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-side-todo {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: x-large;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side-todo {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: x-large;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.todo-text {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: x-large;
+}
+
+.finished {
+  text-decoration: line-through;
+}
+
+.add-todo-inp {
+  font-size: x-large;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.add-todo-inp-date {
+  font-size: x-large;
+  width: 45%;
+  box-sizing: border-box;
+}
+
+.edit-todo-text {
+  font-size: x-large;
+}
+
+.edit-todo-date {
+  font-size: x-large;
+}
+
+.todo-edit {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.todo-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.add-todo-inp-button {
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  color: rgb(34, 32, 32);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  cursor: pointer;
+  background-color: rgba(8, 235, 8, 0.808);
+  font-size: x-large;
+  width: 49%;
+}
+
+.add-todo-inp-button:hover {
+  background-color: rgb(79, 173, 16);
+}
+
+.cancel-todo-inp-button {
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  color: rgb(34, 32, 32);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  cursor: pointer;
+  background-color: rgba(255, 8, 0, 0.671);
+  font-size: x-large;
+  width: 49%;
+}
+
+.cancel-todo-inp-button:hover {
+  background-color: rgba(194, 18, 12, 0.671);
+}
+
+.delete-and-date-div {
+  display: flex;
+}
+
+.delete-and-date-div p {
+  margin-right: 20px;
+}
+
+.todo .delete-and-date-div button {
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.todo:hover .delete-and-date-div button {
+  visibility: visible;
+}
