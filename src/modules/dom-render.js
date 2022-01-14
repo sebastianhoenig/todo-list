@@ -11,7 +11,7 @@ function setData(projectList) {
 }
 
 function renderPage(projectList) {
-  if (localStorage.getItem("myData") === null) {
+  if (localStorage.getItem("myData") !== null) {
     let myDataDeserialized = JSON.parse(localStorage.getItem("myData"));
     myDataDeserialized.forEach((project) => {
       let todoArray = [];
