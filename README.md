@@ -1,6 +1,6 @@
 The Todo-List project from The Odin Project's JavaScript curriculum. https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/todo-list
 
-View My Project Live: https://sebastianhoenig.github.io/TodoList/
+View My Project Live: https://sebastianhoenig.github.io/todo-list/
 
 What I gained from doing this project:
 
